@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" fill="none">
+  <defs>
+    <radialGradient id="auraBg" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#312e81"/>
+      <stop offset="55%" stop-color="#13172e"/>
+      <stop offset="100%" stop-color="#090d1a"/>
+    </radialGradient>
+    <radialGradient id="haloGlow" cx="50%" cy="42%" r="42%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.45"/>
+      <stop offset="60%" stop-color="#f472b6" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#2dd4bf" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ringGrad" x1="80" y1="80" x2="520" y2="520" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#c4b5fd"/>
+      <stop offset="50%" stop-color="#f472b6"/>
+      <stop offset="100%" stop-color="#2dd4bf"/>
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="180" y1="115" x2="420" y2="395" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="50%" stop-color="#2e1065"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="250" y1="170" x2="350" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#f7d5c0"/>
+      <stop offset="100%" stop-color="#e7b89c"/>
+    </linearGradient>
+    <linearGradient id="jacketGrad" x1="140" y1="365" x2="460" y2="575" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4c1d95"/>
+      <stop offset="50%" stop-color="#6d28d9"/>
+      <stop offset="100%" stop-color="#3b0764"/>
+    </linearGradient>
+    <linearGradient id="laptopGrad" x1="190" y1="440" x2="410" y2="565" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <clipPath id="circleClip">
+      <circle cx="300" cy="300" r="286"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#circleClip)">
+    <rect width="600" height="600" fill="url(#auraBg)"/>
+    <circle cx="300" cy="260" r="250" fill="url(#haloGlow)"/>
+
+    <!-- Subtle tech grid & orbit arcs -->
+    <circle cx="300" cy="300" r="245" stroke="url(#ringGrad)" stroke-opacity="0.16" stroke-width="1.5" stroke-dasharray="8 10"/>
+    <circle cx="300" cy="300" r="205" stroke="#c4b5fd" stroke-opacity="0.14" stroke-width="1"/>
+
+    <!-- Floating code sparkles -->
+    <g opacity="0.7">
+      <circle cx="128" cy="172" r="4" fill="#2dd4bf"/>
+      <circle cx="472" cy="194" r="5" fill="#f472b6"/>
+      <circle cx="445" cy="136" r="3" fill="#c4b5fd"/>
+      <circle cx="156" cy="402" r="3.5" fill="#c4b5fd"/>
+      <path d="M118 258l10 0M123 253l0 10" stroke="#c4b5fd" stroke-width="2" stroke-linecap="round"/>
+      <path d="M475 292l12 0M481 286l0 12" stroke="#2dd4bf" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Back Hair -->
+    <path d="M192 248c0-74 47-128 108-128s108 54 108 128c0 54 18 112 24 148-34 26-84 36-132 36s-98-10-132-36c6-36 24-94 24-148z" fill="url(#hairGrad)"/>
+
+    <!-- Shoulders / Blazer -->
+    <path d="M132 565c12-104 68-168 168-168s156 64 168 168H132z" fill="url(#jacketGrad)"/>
+    <path d="M250 400c16 28 34 42 50 42s34-14 50-42l-20 132h-60l-20-132z" fill="#f5f3ff" opacity="0.92"/>
+    <path d="M222 406l56 120-26 16-48-112 18-24z" fill="#3b0764" opacity="0.55"/>
+    <path d="M378 406l-56 120 26 16 48-112-18-24z" fill="#3b0764" opacity="0.55"/>
+
+    <!-- Neck -->
+    <rect x="275" y="328" width="50" height="76" rx="22" fill="url(#skinGrad)"/>
+    <path d="M275 344c14 14 36 14 50 0v18c-15 10-35 10-50 0v-18z" fill="#d9a082" opacity="0.45"/>
+
+    <!-- Face -->
+    <path d="M226 242c0-44 33-78 74-78s74 34 74 78c0 54-32 102-74 102s-74-48-74-102z" fill="url(#skinGrad)"/>
+
+    <!-- Ears & subtle earrings -->
+    <ellipse cx="224" cy="252" rx="10" ry="16" fill="#eabca0"/>
+    <ellipse cx="376" cy="252" rx="10" ry="16" fill="#eabca0"/>
+    <circle cx="223" cy="268" r="4" fill="#c4b5fd"/>
+    <circle cx="377" cy="268" r="4" fill="#c4b5fd"/>
+
+    <!-- Front Hair Sweeps -->
+    <path d="M214 232c4-60 44-96 92-96 52 0 88 38 86 98-20-34-46-46-88-50-36 16-66 36-90 48z" fill="url(#hairGrad)"/>
+    <path d="M218 228c-8 38-6 82 8 118-16-24-24-66-16-114l8-4z" fill="#1e1b4b"/>
+    <path d="M382 228c8 38 6 82-8 118 16-24 24-66 16-114l-8-4z" fill="#1e1b4b"/>
+
+    <!-- Eyes & Brows -->
+    <path d="M248 229c10-6 22-6 31-1" stroke="#1e1b4b" stroke-width="4" stroke-linecap="round"/>
+    <path d="M321 228c9-5 21-5 31 1" stroke="#1e1b4b" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Stylish Glasses -->
+    <rect x="242" y="238" width="46" height="32" rx="12" stroke="#c4b5fd" stroke-width="3.2" fill="#ffffff" fill-opacity="0.06"/>
+    <rect x="312" y="238" width="46" height="32" rx="12" stroke="#c4b5fd" stroke-width="3.2" fill="#ffffff" fill-opacity="0.06"/>
+    <path d="M288 252h24" stroke="#c4b5fd" stroke-width="3"/>
+    <circle cx="265" cy="254" r="6" fill="#1e1b4b"/>
+    <circle cx="335" cy="254" r="6" fill="#1e1b4b"/>
+    <circle cx="267" cy="252" r="2" fill="#ffffff"/>
+    <circle cx="337" cy="252" r="2" fill="#ffffff"/>
+
+    <!-- Soft blush & warm smile -->
+    <ellipse cx="251" cy="276" rx="11" ry="5.5" fill="#f472b6" opacity="0.22"/>
+    <ellipse cx="349" cy="276" rx="11" ry="5.5" fill="#f472b6" opacity="0.22"/>
+    <path d="M284 298c10 10 22 10 32 0" stroke="#b4655c" stroke-width="3.5" stroke-linecap="round"/>
+
+    <!-- Sleek Laptop in Foreground -->
+    <path d="M188 458c0-10 8-18 18-18h188c10 0 18 8 18 18v104H188V458z" fill="url(#laptopGrad)" stroke="#c4b5fd" stroke-opacity="0.4" stroke-width="2"/>
+    <!-- Glowing code lines on back of lid / emblem -->
+    <circle cx="300" cy="500" r="18" fill="#a78bfa" fill-opacity="0.16" stroke="url(#ringGrad)" stroke-width="2"/>
+    <path d="M293 500l-5-4 5-4M307 500l5-4-5-4M302 492l-4 15" stroke="#c4b5fd" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Outer Crisp Ring -->
+  <circle cx="300" cy="300" r="286" stroke="url(#ringGrad)" stroke-width="4" opacity="0.85"/>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="55%" stop-color="#312e81"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="strokeGrad" x1="12" y1="12" x2="108" y2="108" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#c4b5fd"/>
+      <stop offset="50%" stop-color="#f472b6"/>
+      <stop offset="100%" stop-color="#2dd4bf"/>
+    </linearGradient>
+    <linearGradient id="letterGrad" x1="25" y1="30" x2="95" y2="90" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#f5f3ff"/>
+      <stop offset="60%" stop-color="#c4b5fd"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="112" height="112" rx="28" fill="url(#bgGrad)" stroke="url(#strokeGrad)" stroke-width="3"/>
+  <path d="M27 83L42 37H50L65 83H56.5L53.2 72H38.8L35.5 83H27ZM41 64.5H51L46 48L41 64.5Z" fill="url(#letterGrad)"/>
+  <path d="M58 37H66.5L72.8 68L80.5 42H87.5L95 68L101.5 37H109.5L99 83H91.2L84 56.5L76.5 83H68.8L58 37Z" fill="url(#letterGrad)" opacity="0.94"/>
+</svg>
+
